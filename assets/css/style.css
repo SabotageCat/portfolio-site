@@ -1,5 +1,85 @@
+:root {
+    --red1: #ff4040;
+    --red2: #dc143c;
+    --yellow1: #ffcc33;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+header {
+    padding: 20px 35px;
+    background-color: var(--red2);
+}
+header h1 {
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: var(--yellow1);
+}
+header nav {
+    float: right;
+    margin: 5px 0;
+}
+header nav ul li {
+    display: inline;
+    padding: 0 25px;
+    font-size: 25px;
+}
+
+body {
+    color: var(--yellow1) ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section {
+    padding: 0 0 20px 40px;
+}
+.section-title {
+    font-size: 45px;
+    color: var(--yellow1);
+    margin-right: 45px;
+    padding-right: 10px;
+    display: inline-block;
+    border-right: 3px solid var(--red2);
+    min-width: 30%;
+    max-width: 30%;
+}
+/* Hero style */
+.hero {
+    background-image: url(../images/coming-soon.jpg);
+    height: 300px;
+    position: relative;
+}
+.work-with-me-form {
+    background-color: var(--red2);
+    padding: 20px;
+    width: 600px;
+    position: absolute;
+    right: 100px;
+    bottom: 30%;
+}
+
+/* About Me style */
+.intro {
+    display: flex;
+}
+.intro p {
+    flex-wrap: wrap;
+}
+
+/*Works style */
+.portfolio {
+    display: flex;
+    flex-direction: column;
+}
+.work img{
+    float: left;
+    width: 70%;
+    
+    height: auto;
+    border: 3px solid ;
+    filter: brightness(80%);
 }
