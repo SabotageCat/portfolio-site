@@ -1,6 +1,6 @@
 :root {
-    --red1: #ff4040;
-    --red2: #dc143c;
+    --red2: #ff4040;
+    --red: #dc143c;
     --yellow1: #ffcc33;
 }
 * {
@@ -10,7 +10,7 @@
 }
 header {
     padding: 20px 35px;
-    background-color: var(--red2);
+    background-color: var(--red);
 }
 header h1 {
     display: inline;
@@ -36,50 +36,112 @@ body {
 
 section {
     padding: 0 0 20px 40px;
+    background-color: var(--red2);
 }
-.section-title {
-    font-size: 45px;
-    color: var(--yellow1);
-    margin-right: 45px;
-    padding-right: 10px;
-    display: inline-block;
-    border-right: 3px solid var(--red2);
-    min-width: 30%;
-    max-width: 30%;
+
+footer {
+    background: var(--red);
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 /* Hero style */
 .hero {
     background-image: url(../images/coming-soon.jpg);
-    height: 300px;
-    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+.hero img {
+    margin: 25px;
+    width: 35%;
+    height: auto;
+    border: 5px solid black;
+    border-radius: 100px;
 }
 .work-with-me-form {
-    background-color: var(--red2);
+    background-color: var(--red);
     padding: 20px;
-    width: 600px;
-    position: absolute;
-    right: 100px;
-    bottom: 30%;
+    width: 50%;
+    height: 80%;
+    margin: 3%;
 }
-
+.work-with-me-form h2 {
+    font-size: 24px;
+}
+.work-with-me-form p {
+    margin: 5px 0 15px 0;
+}
+.work-with-me-form input {
+    display: block;
+}
 /* About Me style */
 .intro {
+    width: 100%;
     display: flex;
+}
+.intro h2 {
+    font-size: 45px;
+    color: var(--yellow1);
+    margin-right: 45px;
+    padding-right: 10px;
+    border-right: 5px solid var(--red);
+    width: 100%;
 }
 .intro p {
     flex-wrap: wrap;
+    padding: 20px 10px 10px 0;
 }
 
 /*Works style */
 .portfolio {
+    width: 100%;
+    margin: 0 auto;
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
 }
-.work img{
-    float: left;
-    width: 70%;
-    
+.portfolio h2 {
+    font-size: 45px;
+    color: var(--yellow1);
+    border-bottom: 5px solid var(--red);
+    width: 100%;
+    text-align: center;
+}
+.work {
+    display: flex;
+    padding: 25px 0;
+    width: 50%;
     height: auto;
-    border: 3px solid ;
-    filter: brightness(80%);
 }
+
+.work h3 {
+    background-color: var(--red);
+    padding: 0.5% 1.5%;
+    z-index: 2;
+}
+.run-buddy {
+    background-image: url("../images/run-buddy.jpg");
+    background-size: cover;
+    padding: 25px 0;
+    width: 100%;
+    height: auto;
+}
+.robot-gladiators {
+    background-image: url("../images/robot-gladiators.JPG");
+    background-size: contain;
+    padding: 25px 0;
+    width: 100%;
+    height: auto;
+}
+.coming-soon {
+    background-image: url("../images/coming-soon.jpg");
+    background-size: contain;
+    padding: 25px 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Contacts style */
