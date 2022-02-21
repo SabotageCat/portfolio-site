@@ -35,7 +35,7 @@ body {
 }
 
 section {
-    padding: 0 0 20px 40px;
+    padding: 20px 40px;
     background-color: var(--red2);
 }
 
@@ -77,6 +77,7 @@ footer {
 }
 .work-with-me-form input {
     display: block;
+    width: 60%;
 }
 /* About Me style */
 .intro {
@@ -100,8 +101,6 @@ footer {
 .portfolio {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 .portfolio h2 {
     font-size: 45px;
@@ -112,36 +111,39 @@ footer {
 }
 .work {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row;
     padding: 25px 0;
-    width: 50%;
-    height: auto;
+    width: 100%;
 }
-
+.work a {
+    text-decoration: none;
+    color: var(--yellow1);
+}
+.work a:hover {
+    filter: brightness(50%);
+}
 .work h3 {
     background-color: var(--red);
-    padding: 0.5% 1.5%;
-    z-index: 2;
+    position: absolute;
+    bottom: 2.5%;
+    left: 1.5%;
+}
+.work img {
+    width: 100%;
 }
 .run-buddy {
-    background-image: url("../images/run-buddy.jpg");
-    background-size: cover;
-    padding: 25px 0;
-    width: 100%;
-    height: auto;
+    flex: 1;
+    position: relative;
 }
 .robot-gladiators {
-    background-image: url("../images/robot-gladiators.JPG");
-    background-size: contain;
-    padding: 25px 0;
-    width: 100%;
-    height: auto;
+    flex: 1;
+    position: relative;
 }
 .coming-soon {
-    background-image: url("../images/coming-soon.jpg");
-    background-size: contain;
-    padding: 25px 0;
-    width: 100%;
-    height: auto;
+    flex: 1;
+    position: relative;
 }
 
 /* Contacts style */
