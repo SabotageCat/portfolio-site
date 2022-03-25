@@ -3,147 +3,63 @@
     --red: #dc143c;
     --yellow1: #ffcc33;
 }
-* {
+/* Global Style */
+
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-header {
-    padding: 20px 35px;
-    background-color: var(--red);
-}
-header h1 {
-    display: inline;
-}
-header a {
+} */
+
+a:link, a:visited {
     text-decoration: none;
-    color: var(--yellow1);
-}
-header nav {
-    float: right;
-    margin: 5px 0;
-}
-header nav ul li {
-    display: inline;
-    padding: 0 25px;
-    font-size: 25px;
+    color: var(--red2);
 }
 
 body {
-    color: var(--yellow1) ;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
-section {
-    padding: 20px 40px;
-    background-color: var(--red2);
-}
-
-footer {
-    background: var(--red);
-    width: 100%;
-    padding: 40px 35px;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-/* Hero style */
-.hero {
-    background-image: url(../images/coming-soon.jpg);
-    height: 500px;
-    display: flex;
-    justify-content: right;
-    flex-wrap: wrap;
-}
-.hero img {
-    margin: 25px;
-    width: 35%;
-    height: auto;
-    border: 5px solid black;
-    border-radius: 100px;
-}
-.work-with-me-form {
-    background-color: var(--red);
-    padding: 20px;
-    width: 50%;
-    height: 80%;
-    margin: 3%;
-}
-.work-with-me-form h2 {
-    font-size: 24px;
-}
-.work-with-me-form p {
-    margin: 5px 0 15px 0;
-}
-.work-with-me-form input {
-    display: block;
-    width: 60%;
-}
-/* About Me style */
-.intro {
-    width: 100%;
-    display: flex;
-}
-.intro h2 {
-    font-size: 45px;
-    color: var(--yellow1);
-    margin-right: 45px;
-    padding-right: 10px;
-    border-right: 5px solid var(--red);
-    width: 100%;
-}
-.intro p {
-    flex-wrap: wrap;
-    padding: 20px 10px 10px 0;
-}
-
-/*Works style */
-.portfolio {
-    width: 100%;
-    margin: 0 auto;
-}
-.portfolio h2 {
-    font-size: 45px;
-    color: var(--yellow1);
-    border-bottom: 5px solid var(--red);
-    width: 100%;
+body h2 {
     text-align: center;
 }
-.work {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
-    padding: 25px 0;
-    width: 100%;
-}
-.work a {
-    text-decoration: none;
-    color: var(--yellow1);
-}
-.work a:hover {
-    filter: brightness(50%);
-}
-.work h3 {
-    background-color: var(--red);
-    position: absolute;
-    bottom: 2.5%;
-    left: 1.5%;
-}
-.work img {
-    width: 100%;
-}
-.run-buddy {
-    flex: 1;
-    position: relative;
-}
-.robot-gladiators {
-    flex: 1;
-    position: relative;
-}
-.coming-soon {
-    flex: 1;
-    position: relative;
+
+/* Header Style */
+header {
+
 }
 
-/* Contacts style */
+/* Hero Style */
+.hero-section {
+    background-image: url("../images/coming-soon.jpg");
+}
+
+.hero-section form {
+    width: 80%;
+    height: auto;
+}
+
+/* About Me Style */
+.aboutme-section {
+
+}
+
+/* Works Style */
+.work-section {
+
+}
+
+/* Contact Style */
+.contact-section {
+
+}
+
+/* Footer Style */
+footer {
+
+}
+
+/* Media Style for desktop screens and larger */
+@media screen and (min-width: 768px) {
+    
+}
