@@ -112,10 +112,15 @@ footer {
 .work {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     padding: 25px 0;
-    width: 100%;
+}
+.work article{
+    flex: 0 1;
+    padding-bottom: 1.5rem;
+    width: 85%;
+    text-align: center;
 }
 .work a {
     text-decoration: none;
@@ -124,26 +129,15 @@ footer {
 .work a:hover {
     filter: brightness(50%);
 }
-.work h3 {
+/* .work h3 {
     background-color: var(--red);
-    position: absolute;
     bottom: 2.5%;
     left: 1.5%;
-}
+} */
 .work img {
-    width: 100%;
-}
-.run-buddy {
-    flex: 1;
-    position: relative;
-}
-.robot-gladiators {
-    flex: 1;
-    position: relative;
-}
-.coming-soon {
-    flex: 1;
-    position: relative;
+    width: auto;
+    max-width: 65%;
+    height: auto;
 }
 
 /* Contacts style */
